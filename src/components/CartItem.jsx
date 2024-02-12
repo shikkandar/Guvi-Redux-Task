@@ -1,11 +1,10 @@
 import React from "react";
 import { Delete } from "@mui/icons-material";
-import { remove } from "../redux/Slices/cartSlice";
+import { remove, increment, decrement } from "../redux/Slices/cartSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useSnackbar } from "notistack";
 
 const CartItem = ({ item }) => {
-  const { cart } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const { enqueueSnackbar } = useSnackbar();
@@ -18,6 +17,14 @@ const CartItem = ({ item }) => {
     });
   };
 
+  const handleIncrement = () => {
+    dispatch(increment(item.id));
+  };
+
+  const handleDecrement = () => {
+    dispatch(decrement(item.id));
+  };
+
   return (
     <>
       <div className="flex items-center p-5 justify-between bg-violet-200 mt-2 mb-2 rounded-xl">
@@ -28,6 +35,11 @@ const CartItem = ({ item }) => {
               {item.title}
             </h1>
             <p>${item.price}</p>
+            <div style={{ display: "flex" }}>
+              <button onClick={handleIncrement}>+</button>
+              <p>{item.itemCount}</p>
+              <button onClick={handleDecrement}>-</button>
+            </div>
           </div>
         </div>
         <div

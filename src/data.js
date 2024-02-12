@@ -11,6 +11,7 @@ export const products = [
       rate: 3.9,
       count: 120,
     },
+    itemCount:1,
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ export const products = [
       rate: 4.1,
       count: 259,
     },
+    itemCount:1,
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ export const products = [
       rate: 4.7,
       count: 500,
     },
+    itemCount:1,
   },
   {
     id: 4,
@@ -51,6 +54,7 @@ export const products = [
       rate: 2.1,
       count: 430,
     },
+    itemCount:1,
   },
   {
     id: 5,
@@ -65,6 +69,7 @@ export const products = [
       rate: 4.6,
       count: 400,
     },
+    itemCount:1,
   },
   {
     id: 6,
@@ -78,6 +83,7 @@ export const products = [
       rate: 3.9,
       count: 70,
     },
+    itemCount:1,
   },
   {
     id: 7,
@@ -91,6 +97,7 @@ export const products = [
       rate: 3,
       count: 400,
     },
+    itemCount:1,
   },
   {
     id: 8,
@@ -104,6 +111,7 @@ export const products = [
       rate: 1.9,
       count: 100,
     },
+    itemCount:1,
   },
   {
     id: 9,
@@ -117,6 +125,7 @@ export const products = [
       rate: 3.3,
       count: 203,
     },
+    itemCount:1,
   },
   {
     id: 10,
@@ -130,6 +139,7 @@ export const products = [
       rate: 2.9,
       count: 470,
     },
+    itemCount:1,
   },
   {
     id: 11,
@@ -144,6 +154,7 @@ export const products = [
       rate: 4.8,
       count: 319,
     },
+    itemCount:1,
   },
   {
     id: 12,
@@ -158,6 +169,7 @@ export const products = [
       rate: 4.8,
       count: 400,
     },
+    itemCount:1,
   },
   {
     id: 13,
@@ -171,6 +183,7 @@ export const products = [
       rate: 2.9,
       count: 250,
     },
+    itemCount:1,
   },
   {
     id: 14,
@@ -185,6 +198,7 @@ export const products = [
       rate: 2.2,
       count: 140,
     },
+    itemCount:1,
   },
   {
     id: 15,
@@ -198,6 +212,7 @@ export const products = [
       rate: 2.6,
       count: 235,
     },
+    itemCount:1,
   },
   {
     id: 16,
@@ -212,6 +227,7 @@ export const products = [
       rate: 2.9,
       count: 340,
     },
+    itemCount:1,
   },
   {
     id: 17,
@@ -225,6 +241,7 @@ export const products = [
       rate: 3.8,
       count: 679,
     },
+    itemCount:1,
   },
   {
     id: 18,
@@ -238,6 +255,7 @@ export const products = [
       rate: 4.7,
       count: 130,
     },
+    itemCount:1,
   },
   {
     id: 19,
@@ -251,6 +269,7 @@ export const products = [
       rate: 4.5,
       count: 146,
     },
+    itemCount:1,
   },
   {
     id: 20,
@@ -264,5 +283,6 @@ export const products = [
       rate: 3.6,
       count: 145,
     },
+    itemCount:1,
   },
 ];

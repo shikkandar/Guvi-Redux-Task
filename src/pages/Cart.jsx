@@ -5,10 +5,21 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
   const [totalAmount, setTotalAmount] = useState(0);
+  const [totalCount, setTotalCount] = useState(0);
   const { cart } = useSelector((state) => state);
+
   useEffect(() => {
-    setTotalAmount(cart.reduce((acc, curr) => acc + curr.price, 0));
+    // Calculate total amount
+    const calculatedTotalAmount = cart.reduce(
+      (acc, curr) => acc + curr.price * curr.itemCount,
+      0
+    );
+    setTotalAmount(Number(calculatedTotalAmount.toFixed(2)));
+
+    // Calculate total count
+    setTotalCount(cart.reduce((acc, curr) => acc + curr.itemCount, 0));
   }, [cart]);
+
   return (
     <>
       {cart.length > 0 ? (
@@ -28,7 +39,7 @@ const Cart = () => {
                   <span className="text-gray-700 font-semibold">
                     Total Items
                   </span>{" "}
-                  : {cart.length}
+                  : {totalCount}
                 </p>
                 <p>
                   {" "}
